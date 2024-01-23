@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EXU514\\source\\repos\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectUniqueName": "C:\\Users\\EXU514\\source\\repos\\CitiesMockAPI\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
       "projectName": "CityInfo.API",
-      "projectPath": "C:\\Users\\EXU514\\source\\repos\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectPath": "C:\\Users\\EXU514\\source\\repos\\CitiesMockAPI\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
       "packagesPath": "C:\\Users\\EXU514\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EXU514\\source\\repos\\CityInfo.API\\CityInfo.API\\obj\\",
+      "outputPath": "C:\\Users\\EXU514\\source\\repos\\CitiesMockAPI\\CityInfo.API\\CityInfo.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EXU514\\AppData\\Roaming\\NuGet\\NuGet.Config",

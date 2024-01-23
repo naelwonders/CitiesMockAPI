@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KUjHIIyHJA5n2rtcvJzbvt5rd6ZMIXW1qGTynLCeCiq0bD2kOojbyFNeFCRvyFwBFT1HvdxtXg1r/uG4gAo+kw==",
+  "dgSpecHash": "99c+Cbn5mNhHoFvlS4F8Ed0VMTn4GxjXh3cLsN0zM+X8YYLbZNMVDXSmzIvz/J7ePkSdjZfsBbaSpKLpGnW7xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EXU514\\source\\repos\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+  "projectFilePath": "C:\\Users\\EXU514\\source\\repos\\CitiesMockAPI\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EXU514\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\EXU514\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

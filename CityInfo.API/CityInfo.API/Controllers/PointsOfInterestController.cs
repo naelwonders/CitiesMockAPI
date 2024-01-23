@@ -26,7 +26,7 @@ namespace CityInfo.API.Controllers
             return Ok(city.PointsOfInterest);
         }
 
-        [HttpGet("{pointofinterestid}")]
+        [HttpGet("{pointofinterestid}", Name = "GetOnePointOfInterest")]
         public ActionResult<IEnumerable<PointsOfInterestsDto>> GetOnePointOfInterest(int cityId, int pointOfInterestId)
         {
             //first we need to check that the city exists indeed
@@ -46,6 +46,34 @@ namespace CityInfo.API.Controllers
             }
 
             return Ok(pointOfInterest);
+        }
+
+        [HttpPost]
+        public ActionResult<PointsOfInterestsDto> CreatePointOfInterest(int cityId, PointOfInterestForCreationDto pointOfInterest)
+        {
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            //calculate the id of point of interest logic - to be improve later on
+            var maxPointOfInterestID = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterest).Max(p => p.Id);
+
+            var finalPointOfInterest = new PointsOfInterestsDto()
+            {
+                Id = ++maxPointOfInterestID, //previously calculated id
+                Name = pointOfInterest.Name,
+                Description = pointOfInterest.Description
+            };
+            city.PointsOfInterest.Add(finalPointOfInterest);
+            return CreatedAtRoute("GetOnePointOfInterest",
+                new
+                {
+                    cityId = cityId,
+                    pointOfInterestId = finalPointOfInterest.Id
+                }, finalPointOfInterest);
         }
 
     }
